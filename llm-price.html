@@ -89,14 +89,14 @@
     <div class="filters">
         <select id="modelFilter">
             <option value="">All Models</option>
-            <option value="GPT-3.5">GPT-3.5</option>
-            <option value="GPT-4">GPT-4</option>
+            <option value="Claude 3.5 Sonnet">Claude 3.5 Sonnet</option>
+            <option value="Claude 3 Haiku">Claude 3 Haiku</option>
+            <option value="Claude 3 Opus">Claude 3 Opus</option>
         </select>
         <select id="providerFilter">
             <option value="">All Providers</option>
-            <option value="GCP">GCP</option>
             <option value="AWS">AWS</option>
-            <option value="Azure">Azure</option>
+            <option value="GCP">GCP</option>
         </select>
     </div>
 
@@ -106,65 +106,70 @@
                 <tr>
                     <th>Model</th>
                     <th>Provider</th>
-                    <th>Input Price (per 1K tokens)</th>
-                    <th>Output Price (per 1K tokens)</th>
+                    <th>Input Price (per 1M tokens)</th>
+                    <th>Output Price (per 1M tokens)</th>
                     <th>Last Updated</th>
                     <th>Pricing Source</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>GPT-3.5</td>
-                    <td>GCP</td>
-                    <td>$0.0015</td>
-                    <td>$0.002</td>
-                    <td>2024-07-15</td>
-                    <td>GCP AI Platform Pricing</td>
-                </tr>
-                <tr>
-                    <td>GPT-3.5</td>
+                    <td>Claude 3.5 Sonnet</td>
                     <td>AWS</td>
-                    <td>$0.0010</td>
-                    <td>$0.0020</td>
-                    <td>2024-07-10</td>
-                    <td>AWS Bedrock Pricing</td>
+                    <td>$3</td>
+                    <td>$15</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://aws.amazon.com/bedrock/pricing/">AWS Bedrock Pricing</a></td>
                 </tr>
                 <tr>
-                    <td>GPT-3.5</td>
-                    <td>Azure</td>
-                    <td>$0.0015</td>
-                    <td>$0.002</td>
-                    <td>2024-07-12</td>
-                    <td>Azure OpenAI Pricing</td>
-                </tr>
-                <tr>
-                    <td>GPT-4</td>
-                    <td>GCP</td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                    <td>2024-07-15</td>
-                    <td>N/A</td>
-                </tr>
-                <tr>
-                    <td>GPT-4</td>
+                    <td>Claude 3 Haiku</td>
                     <td>AWS</td>
-                    <td>$0.01</td>
-                    <td>$0.03</td>
-                    <td>2024-07-10</td>
-                    <td>AWS Bedrock Pricing</td>
+                    <td>$0.25</td>
+                    <td>$1.25</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://aws.amazon.com/bedrock/pricing/">AWS Bedrock Pricing</a></td>
                 </tr>
                 <tr>
-                    <td>GPT-4</td>
-                    <td>Azure</td>
-                    <td>$0.01</td>
-                    <td>$0.03</td>
-                    <td>2024-07-12</td>
-                    <td>Azure OpenAI Pricing</td>
+                    <td>Claude 3 Opus</td>
+                    <td>AWS</td>
+                    <td>$15</td>
+                    <td>$75</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://aws.amazon.com/bedrock/pricing/">AWS Bedrock Pricing</a></td>
                 </tr>
+                
+                <tr>
+                    <td>Claude 3.5 Sonnet</td>
+                    <td>GCP</td>
+                    <td>$3</td>
+                    <td>$15</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://cloud.google.com/vertex-ai/generative-ai/pricing">Vertex AI Pricing</a></td>
+                </tr>
+                <tr>
+                    <td>Claude 3 Haiku</td>
+                    <td>GCP</td>
+                    <td>$0.25</td>
+                    <td>$1.25</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://cloud.google.com/vertex-ai/generative-ai/pricing">Vertex AI Pricing</a></td>
+                </tr>
+                <tr>
+                    <td>Claude 3 Opus</td>
+                    <td>GCP</td>
+                    <td>$15</td>
+                    <td>$75</td>
+                    <td>2024-07-28</td>
+                    <td><a href="https://cloud.google.com/vertex-ai/generative-ai/pricing">Vertex AI Pricing</a></td>
+                </tr>
+
+
+
             </tbody>
         </table>
     </div>
-
+    
+    <!--
     <div class="notes">
         <h2>Notes:</h2>
         <ul>
@@ -187,10 +192,11 @@
             <li>1K tokens ≈ 750 words</li>
         </ul>
     </div>
+-->
 
     <footer>
         <p>For more detailed pricing and the most up-to-date information, please visit the official pricing pages of each cloud provider.</p>
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>© 2024. Crafted by athingforcode.</p>
     </footer>
 
     <script>
